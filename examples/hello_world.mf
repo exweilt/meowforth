@@ -1,0 +1,3 @@
+# This program is boring
+
+"Hello, World!" print

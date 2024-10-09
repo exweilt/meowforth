@@ -1,0 +1,19 @@
+def BUF_SIZE (-> number) 1000 ;
+
+def read-input (-> addr len)
+    BUF_SIZE alloc
+    <0> BUF_SIZE read
+    ;
+
+def capitalize (addr len -> addr len)
+    (<1> 96 >) (<2> 123 <) and if
+        ((<1> deref) ++) <2> move
+    end
+    ;
+
+    
+def main (->)
+    read-input capitalize print
+    ;
+
+main
