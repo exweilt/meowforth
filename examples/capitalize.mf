@@ -13,7 +13,7 @@ def capitalize (addr len -> addr len)
 
     
 def main (->)
-    read-input capitalize print
+    read-input capitalize print-ln
     ;
 
 main

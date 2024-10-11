@@ -1,0 +1,15 @@
+def TIMEOUT 30 ; # Seconds
+
+def tick (u32 ->)
+    print-int "..." 13 putchar
+    ;
+
+def main
+    TIMEOUT
+    [0] while
+        [0] tick
+    end
+    "BOOOOOOM!!!" print-ln
+    ;
+    
+main
